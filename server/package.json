@@ -1,0 +1,17 @@
+{
+  "name": "co-sketch-server",
+  "version": "1.0.0",
+  "description": "Server for Co Sketch",
+  "main": "index.js",
+  "author": "luvuong-le",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -L src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
