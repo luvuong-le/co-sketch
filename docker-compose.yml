@@ -7,13 +7,14 @@ services:
 ########################################
     server: 
         build: 
-            context: ./server
+            context: ./packages/server
         expose: 
             - "8000"
         ports:
             - "8000:8000"
         volumes:
-            - ./server:/usr/src/server
+            - ./packages/server:/usr/src/server
+            - /usr/src/server/node_modules
         command: yarn run dev
 
 ########################################
@@ -21,13 +22,14 @@ services:
 ########################################        
     client: 
         build: 
-            context: ./client
+            context: ./packages/client
         expose: 
             - "3000"
         ports:
             - "3000:3000"
         volumes:
-            - ./client:/usr/src/client
+            - ./packages/client:/usr/src/client
+            - /usr/src/client/node_modules
         tty: true
         depends_on:
             - server

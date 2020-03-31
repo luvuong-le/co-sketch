@@ -7,7 +7,7 @@ WORKDIR /usr/src/server
 COPY package.json /usr/src/server
 COPY yarn.lock /usr/src/server
 
-RUN yarn
+RUN yarn install
 
 COPY . .
 
