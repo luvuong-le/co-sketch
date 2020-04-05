@@ -6,10 +6,12 @@
   "author": "luvuong-le",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon -L src/server.js"
+    "dev": "nodemon -L src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "@co-sketch/common": "^0.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

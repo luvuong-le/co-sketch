@@ -1,36 +1,27 @@
-version: '3'
+version: '3.7'
 
 services: 
-
 ########################################
 # Setup Backend
 ########################################
     server: 
-        build: 
-            context: ./packages/server
         expose: 
             - "8000"
         ports:
             - "8000:8000"
         volumes:
-            - ./packages/server:/usr/src/server
-            - /usr/src/server/node_modules
+            - ../packages/server:/co-sketch/packages/server
         command: yarn run dev
 
 ########################################
 # Setup Client
 ########################################        
     client: 
-        build: 
-            context: ./packages/client
         expose: 
             - "3000"
         ports:
             - "3000:3000"
         volumes:
-            - ./packages/client:/usr/src/client
-            - /usr/src/client/node_modules
+            - ../packages/client:/co-sketch/packages/client
         tty: true
-        depends_on:
-            - server
         command: yarn start

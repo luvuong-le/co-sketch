@@ -1,5 +1,4 @@
 {
-    "name": "co-sketch",
     "private": true,
     "workspaces": [
         "packages/*"
