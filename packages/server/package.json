@@ -1,6 +1,6 @@
 {
   "name": "@co-sketch/server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Server for Co Sketch",
   "main": "index.js",
   "author": "luvuong-le",
@@ -10,8 +10,8 @@
     "start": "node src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "@co-sketch/common": "^0.1.0"
+    "@co-sketch/common": "^0.1.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

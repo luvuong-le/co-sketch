@@ -5,12 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.1.2](https://github.com/luvuong-le/co-sketch/compare/v0.1.1...v0.1.2) (2020-04-05)
 
-**Note:** Version bump only for package co-sketch
-
-
-
-
-
-## 0.1.1 (2020-03-31)
-
-**Note:** Version bump only for package co-sketch
+**Note:** Version bump only for package @co-sketch/common

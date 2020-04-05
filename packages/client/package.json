@@ -1,6 +1,6 @@
 {
   "name": "@co-sketch/client",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "@craco/craco": "^5.6.4",
     "@testing-library/jest-dom": "^4.2.4",
