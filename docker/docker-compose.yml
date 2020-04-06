@@ -10,14 +10,9 @@ services:
             context: ../
             target: server
         image: co-sketch/server
+        expose: 
+            - "8000"
+        ports:
+            - "8000:8000"
         container_name: co-sketch-server
-
-########################################
-# Setup Client
-########################################        
-    client: 
-        build: 
-            context: ../
-            target: client
-        image: co-sketch/client
-        container_name: co-sketch-client
+        command: yarn start

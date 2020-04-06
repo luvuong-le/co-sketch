@@ -5,10 +5,7 @@ services:
 # Setup Backend
 ########################################
     server: 
-        expose: 
-            - "8000"
-        ports:
-            - "8000:8000"
+        container_name: co-sketch-server-dev
         volumes:
             - ../packages/server:/co-sketch/packages/server
         command: yarn run dev
@@ -17,6 +14,11 @@ services:
 # Setup Client
 ########################################        
     client: 
+        build: 
+            context: ../
+            target: client
+        image: co-sketch/client
+        container_name: co-sketch-client-dev
         expose: 
             - "3000"
         ports:
