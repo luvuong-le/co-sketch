@@ -25,7 +25,7 @@ During **_production_** instead of a client running react, nginx will act as a s
 ### Production
 
 - Nginx: ~128MB
-- Server: ~248MB
+- Server: ~244MB
 
 ### Development
 
@@ -52,6 +52,8 @@ You can use `COMPOSE_DOCKER_CLI_BUILD=1` and `DOCKER_BUILDKIT=1` for more effici
 
 ### Build Docker Images _without Compose_
 
+> **Note**: Use --build-arg NODE_ENV=production for production builds
+
 - Server: `docker build --target server -t co-sketch/server:latest .`
 - Client: `docker build --target client -t co-sketch/client:latest .`
 - Nginx: `docker build --target nginx -t co-sketch/nginx:latest .`
@@ -60,8 +62,8 @@ You can use `COMPOSE_DOCKER_CLI_BUILD=1` and `DOCKER_BUILDKIT=1` for more effici
 
 #### **Development**
 
-- Server: `docker run --name co-sketch-server-dev -p 8000:8000 -v <path-to-folder>:/co-sketch/packages/server co-sketch/server:latest yarn run dev`
-- Client: `docker run it --name co-sketch-client-dev -p 3000:3000 -v <path-to-folder>:/co-sketch/packages/client co-sketch/client:latest yarn start`
+- Server: `docker run -d --name co-sketch-server-dev -p 8000:8000 -v <path-to-folder>:/usr/src/co-sketch/packages/server co-sketch/server:latest yarn run dev`
+- Client: `docker run -d -it --name co-sketch-client-dev -p 3000:3000 -v <path-to-folder>:/usr/src/co-sketch/packages/client co-sketch/client:latest yarn start`
 
 #### **Production**
 

@@ -6,6 +6,9 @@ FROM mhart/alpine-node:12 AS builder
 
 WORKDIR /usr/src/co-sketch/
 
+ARG NODE_ENV=development
+ENV NODE_ENV=${NODE_ENV}
+
 COPY package.json yarn.lock lerna.json ./
 
 RUN yarn install

@@ -7,7 +7,7 @@ services:
     server: 
         container_name: co-sketch-server-dev
         volumes:
-            - ../packages/server:/co-sketch/packages/server
+            - ../packages/server:/usr/src/co-sketch/packages/server
         command: yarn run dev
 
 ########################################
@@ -24,6 +24,6 @@ services:
         ports:
             - "3000:3000"
         volumes:
-            - ../packages/client:/co-sketch/packages/client
+            - ../packages/client:/usr/src/co-sketch/packages/client
         tty: true
         command: yarn start
