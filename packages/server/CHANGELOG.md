@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/luvuong-le/co-sketch/compare/v0.1.3...v0.2.0) (2020-04-09)
+
+**Note:** Version bump only for package @co-sketch/server
+
+
+
+
+
 ## [0.1.3](https://github.com/luvuong-le/co-sketch/compare/v0.1.2...v0.1.3) (2020-04-06)
 
 **Note:** Version bump only for package @co-sketch/server
