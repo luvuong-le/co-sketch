@@ -41,9 +41,6 @@ export default function Navbar() {
     return (
         <Nav>
             <NavList>
-                <i>Test</i>
-            </NavList>
-            <NavList>
                 <NavItem>
                     <NavLink>
                         <Link to="/login"> Enter a Room</Link>

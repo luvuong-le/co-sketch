@@ -30,7 +30,11 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         color: #ffffff;
         background: #4285F4;
-        font-family: 'Poppins Regular', sans-serif;
+        font-family: 'Righteous Regular', sans-serif;
+    }
+
+    .input--error {
+        border-bottom: 2px solid red;
     }
 `
 

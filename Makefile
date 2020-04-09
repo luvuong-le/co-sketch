@@ -38,10 +38,10 @@ ls-images:
 	docker images
 
 compose: 
-	@echo "Composing Docker Images"
-	@if [ $(ENV) == "production" ]; then \
+	@echo "Building Docker Images with Docker Compose"
+	@if [ "$(ENV)" == "production" ]; then \
 		cd docker && docker-compose -f docker-compose.yml -f docker-compose.prod.yml $(NO_CACHE_ARGS) build; \
-	else 
+	else \
 		cd docker && docker-compose $(NO_CACHE_ARGS) build; \
 	fi
 

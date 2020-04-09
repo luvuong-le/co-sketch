@@ -45,7 +45,7 @@ export default function TileHeading({ title }) {
     return (
         <TileHeadingContainer>
             {title.split('').map(char => (
-                <Letter>{char}</Letter>  
+                <Letter key={char}>{char}</Letter>  
             ))}
         </TileHeadingContainer>
     )
