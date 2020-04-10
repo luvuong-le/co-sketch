@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Canvas from '@components/canvas/Canvas';
 import Container from "@components/layout/Container";
 import Subtitle from "@components/heading/Subtitle";

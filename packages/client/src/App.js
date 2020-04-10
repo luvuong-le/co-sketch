@@ -13,6 +13,9 @@ import Title from "@components/heading/Title";
 import Landing from "@components/layout/Landing";
 import Login from "@components/auth/Login";
 import TileHeading from '@components/heading/TileHeading';
+import WebSocketClient from "@components/providers/WebSocketClient";
+
+new WebSocketClient(process.env.REACT_APP_WEBSOCKET_URL);
 
 function App() {
   return (

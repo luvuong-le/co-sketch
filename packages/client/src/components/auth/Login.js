@@ -13,8 +13,7 @@ import Input from "@components/form/Input";
 import Button from "@components/button/Button";
 import Error from "@components/error/Error";
 
-export default function Login() {
-    const FormContainer = styled.div`
+const FormContainer = styled.div`
         position: absolute;
         top: 55%;
         left: 50%;
@@ -26,11 +25,12 @@ export default function Login() {
         }
     `;
 
-    const ErrorContainer = styled.div`
+const ErrorContainer = styled.div`
         background: #ff3c4e;
         border-radius: 5px;
     `;
 
+export default function Login() {
     return (
         <Container>
             <Subtitle>Collabratively draw on a canvas with your friends.</Subtitle>

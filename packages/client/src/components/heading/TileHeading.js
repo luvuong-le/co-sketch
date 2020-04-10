@@ -14,7 +14,7 @@ const Letter = styled.span`
 
     &:first-child {
         border-radius: 5px 0 0 5px;
-    }
+}
 
     &:last-child {
         border-radius: 0 5px 5px 0;
