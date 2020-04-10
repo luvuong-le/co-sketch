@@ -1,6 +1,6 @@
 {
   "name": "@co-sketch/server",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Server for Co Sketch",
   "main": "index.js",
   "author": "luvuong-le",
