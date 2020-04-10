@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/luvuong-le/co-sketch/compare/v0.2.1...v0.3.0) (2020-04-10)
+
+
+### Features
+
+* landing page canvas functionality with drawing feature ([70ac3f8](https://github.com/luvuong-le/co-sketch/commit/70ac3f8ac2eccb19c33beb201f37df5f33837ac8))
+
+
+
+
+
 ## [0.2.1](https://github.com/luvuong-le/co-sketch/compare/v0.2.0...v0.2.1) (2020-04-10)
 
 
