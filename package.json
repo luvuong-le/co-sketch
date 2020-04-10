@@ -7,7 +7,7 @@
     "scripts": {
         "bootstrap": "lerna bootstrap",
         "test": "lerna run test",
-        "new-version": "lerna version --conventional-commits --yes",
+        "new-version": "lerna version --conventional-commits --no-git-tag-version --yes",
         "diff": "lerna diff"
     },
     "dependencies": {
