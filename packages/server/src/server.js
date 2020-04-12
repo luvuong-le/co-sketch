@@ -6,6 +6,7 @@ const WebSocket = require("ws");
 const test = require("@co-sketch/common");
 
 let canvasHistory = [];
+let rooms = {};
 
 const app = express();
 
@@ -23,12 +24,14 @@ const sendCanvasHistory = socket => {
             lineInfo: line
         }));
     }
+    socket.send(JSON.stringify({
+        type: "HISTORY_SENT",
+        success: true
+    }));
 };
 
 ws.on("connection", (socket) => {
     console.log("Connected User");
-
-    sendCanvasHistory(socket);
 
     socket.on("message", (data) => {
         console.log("Message Received Successfully", data);

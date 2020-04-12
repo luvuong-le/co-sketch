@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styled, { css } from "styled-components";
+import React from 'react'
+import styled from "styled-components";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
@@ -55,12 +55,10 @@ export default function Login() {
                             values,
                             touched,
                             errors,
-                            dirty,
                             isSubmitting,
                             handleChange,
                             handleBlur,
                             handleSubmit,
-                            handleReset
                         } = props;
 
                     return (
